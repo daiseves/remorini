@@ -1,12 +1,10 @@
 TPO Desarrollo Web
-
 HTML, CSS y Javascript
 
 ¿Cuándo se entrega?
 Semana 12: semana del 23/5 al 27/5.
 
 ¿Qué hay que entregar?
-
 El TPO deberá cumplir con los siguientes requisitos:
 ● Poseer al menos 3 páginas html, siendo su temática libre. En caso de ser un Sitio Web estilo
 One Page, el mismo deberá tener al menos 3 secciones.
@@ -35,8 +33,9 @@ personas (cantidad máxima de integrantes posible). Para más información sobre
 material incluído en el Aula Virtual Metodologías y herramientas I/Git.
 Condiciones de aprobación: para aprobar se requiere resolver el trabajo práctico en un 60% de
 forma correcta.
+
 ¿Cómo se entrega?
 Cada Docente informará la vía para subir el trabajo. Al momento de la entrega deberán informar: link
 a la web navegable y comentarios que consideren necesarios agregar a la entrega.
 Nota: si ya tenés un proyecto comenzado para este curso, podrás usarlo para esta entrega
-agregándole lo que falte para cumplir con los requisitos
+agregándole lo que falte para cumplir con los requisitos.
