@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--fonts.google. Estoy importando una fuente externa, para usarla sin tenerla en la pc-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&family=Koulen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+          <div class="name">
+             <img src="images/mouse.png">
+             <a>LITERAL PRO</a>
+          </div>
+         <ul>
+             <div class="menu">
+                 <li><a href="index.html">inicio</a></li>
+                 <li><a href="games.html">games</a></li>
+                 <li><a href="#">contacto</a></li>
+            </div>
+         </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="container"> 
+            <div class="cajita">
+                <form class="formulario" action="show_data.html" onsubmit="return validateForm(this);">
+                    <span class="contact1-form-title">¡Comunícate con nosotros!</span>
+                    <hr>
+                    <div class="wrap-input1 validate-input" data-validate="Nombre inválido">
+                        <input class="input1" type="text" name="name" placeholder="Nombre" id="nombre">
+                    </div>
+                    <div class="wrap-input1 validate-input" data-validate="E-mail inválido">
+                        <input class="input1" type="text" name="email" placeholder="E-mail" id="email">
+                    </div>
+                    <div class="wrap-input1 validate-input" data-validate="Por favor, deje su mensaje">
+                        <textarea class="input1" name="message" placeholder="Mensaje" id="mensaje"></textarea>
+                    </div>
+                    <button class="btn">
+                        <span input type="submit" id="submit-button">Enviar Email<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                    </button>
+                </form>
+            </div>
+            <div class="cajita-dos">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68167992998!2d-58.573380150803125!3d-34.61574369249134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1652834200836!5m2!1ses-419!2sar" width="300vw" height="150vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+    </footer>
+
+    <script src="form.js"></script>
+
+</body>
+</html>

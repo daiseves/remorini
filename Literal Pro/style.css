@@ -1,0 +1,257 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes animation {
+    from{background-color: black;}
+    to{background-color: #6534c0;}
+}
+
+
+/*@media screen and (max-width:640px){
+    .fondo{
+        background-color: black;
+    }
+}*/
+
+body{
+    background-color: black;
+}
+
+.nav-bar, footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    height: 1s0vh;
+   }
+
+.nav-bar a{
+    color: #fff;
+    font-family: 'Encode Sans', sans-serif;
+    text-decoration: none;
+   }
+.name{
+    font-size: 1.5rem;
+    margin:1rem;
+   }
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    margin-right: 2rem;
+   }
+.menu li:hover, .footer a:hover i{
+    background-color: #6534c0;
+    transition: 0.3s ease;
+    color:white;
+   }
+
+.menu li {
+    list-style-type: none;
+   }
+
+nav img{
+    width: 3vh;    
+   }
+   
+footer ul, footer li{
+    display: flex;
+    margin-right: 1em;
+    font-size: 1.5rem;
+}
+
+footer a{
+    color:white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main{
+    background:black;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("images/fondo.png");
+}
+
+.container{
+    height: 99%;
+    width: 99%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 2vh;
+    background-color: black;
+    width: 570px;
+    height: 20%;
+    color: white;
+    margin-bottom: 1rem;
+
+}
+
+.box img{
+    border-radius: 100px;
+    width: auto;
+    height: 16vh;
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+    margin-right: 3rem; 
+    float:left;
+
+
+}
+
+.box:hover{
+    animation: animation 5s linear infinite alternate;
+}
+
+.titulo{
+    display: block;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 24px;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 44px;
+}
+
+
+.grid-container{
+    display: grid;
+    /*grid-template-columns: repeat(P3,1fr); Con la p, los elementos se ordenan uno abajo del otro
+      grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: max-content max-content max-content;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding: 3rem;
+}
+
+.grid-item img{
+    width: 200px;
+    border-radius: 3rem;
+
+}
+
+.grid-item:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: 0.3s all ease;
+}
+
+
+.cajita{
+    background-color: black;
+    height: 60vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 200%;
+}
+.cajita-dos{
+    background-color: black;
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 200%;
+    margin-top: 2rem;
+}
+.btn{
+    min-width: 193px;
+    height: 50px;
+    border-radius: 25px;
+    background: #6534c0;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background: white;
+    color:#6534c0;
+
+}
+
+input.input1 {
+    height: 50px;
+    border-radius: 25px;
+  }
+
+
+textarea.input1 {
+    min-height: 150px;
+    border-radius: 25px;
+  }
+
+
+.wrap-input1 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+  
+.input1 {
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+  }
+  
+
+
+@media screen and (min-width: 930px) and (max-width: 1540px){
+    #galeria{
+      grid-template-columns: max-content max-content max-content; 
+    }
+    #hide{
+      display:inline;
+    }
+  }
+  
+  @media screen and (min-width: 500px) and (max-width: 930px){
+    #galeria{
+      grid-template-columns: max-content max-content; 
+    }
+    #hide{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #galeria{
+      grid-template-columns: max-content; 
+    }
+    .pictures img{
+      width: 95vw;
+    }
+    #hide{
+      display:inline;
+    }
+  }
